@@ -1,8 +1,8 @@
 cask "uartist" do
-  version "1.20261006.1192557"
-  sha256 "33e880603be9876ce573579593b91bd55cd151e75b7d5f1455f506d3a9e5170d"
+  version "1.20261006.1205144"
+  sha256 "9191d9fbb8fd6cd3eb203ebad0f014bae388d47ddb1e803448c8170d8945764f"
 
-  url "https://github.com/changyy/UARTist-release/releases/download/1.20261006.1192557/UARTist-#{version}-arm64.dmg",
+  url "https://github.com/changyy/UARTist-release/releases/download/1.20261006.1205144/UARTist-#{version}-arm64.dmg",
       verified: "github.com/changyy/UARTist-release/"
   name "UARTist"
   desc "Serial console for hardware bring-up"
