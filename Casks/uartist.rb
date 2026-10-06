@@ -1,8 +1,8 @@
 cask "uartist" do
-  version "1.20261005.1222956"
-  sha256 "a798e94e5526aec1f307ebddaf1b1155570895d2b58987a580acd38ffc94f739"
+  version "1.20261006.1192557"
+  sha256 "33e880603be9876ce573579593b91bd55cd151e75b7d5f1455f506d3a9e5170d"
 
-  url "https://github.com/changyy/UARTist-release/releases/download/1.20261005.1222956/UARTist-#{version}-arm64.dmg",
+  url "https://github.com/changyy/UARTist-release/releases/download/1.20261006.1192557/UARTist-#{version}-arm64.dmg",
       verified: "github.com/changyy/UARTist-release/"
   name "UARTist"
   desc "Serial console for hardware bring-up"
@@ -17,6 +17,7 @@ cask "uartist" do
   depends_on :macos
 
   app "UARTist.app"
+  binary "#{appdir}/UARTist.app/Contents/MacOS/UARTist", target: "uartist"
 
   # Not notarized yet: clear the quarantine attribute, as install-mac.sh leaves none.
   postflight_steps do
